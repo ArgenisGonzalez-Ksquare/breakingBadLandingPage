@@ -17,6 +17,10 @@ header{
     align-items: center;
 }
 
+.headerSection a{
+    text-decoration: none;
+}
+
 a{
     color: green;
     padding: 10px;
@@ -41,7 +45,7 @@ main{
 }
 
 .HouseImg{
-    width: 30%;
+    width: 40%;
 }
 
 .info{
@@ -49,6 +53,8 @@ main{
     flex-direction: column;
     align-content: center;
     text-align: center;
+    gap: 10px;
+    color: darkgreen;
 }
 
 .info1{
@@ -65,4 +71,15 @@ main{
     padding: 5px;
     width: 220px;
     align-self: center;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 35px;
+    gap: 10px;
+    justify-content: center;
+    background-color: darkgreen;
+    color: white;
 }
