@@ -62,6 +62,7 @@ main{
 }
 .info2{
     font-size: 32pt;
+    color: black;
 }
 .info3{
     font-size: 16pt;
@@ -82,4 +83,61 @@ main{
     justify-content: center;
     background-color: darkgreen;
     color: white;
+<<<<<<< HEAD
+}
+
+/*Member Photos Section*/
+.walterImg{
+    z-index: 1;
+    position: relative;
+    height: 200%;
+    bottom: 25%;
+}
+
+.meetTeam{
+    display: flex;
+    background-color: rgb(1, 76, 1);
+    width: 100%;
+    height: 40vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.teamMember{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.name{
+    font-size: 16pt;
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+.charge{
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+.memberPhoto{
+    width: 130px;
+    border-radius: 50%;
+    position: relative;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+=======
+>>>>>>> 0f62b71c566f1a5942e0220d8cb4641b8a4edba6
 }
