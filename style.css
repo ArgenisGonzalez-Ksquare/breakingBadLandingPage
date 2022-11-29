@@ -18,13 +18,38 @@ header {
     align-items: center;
 }
 
+.headerSection{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.nav-flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.periodic-table-icon{
+    background-color: green;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.periodic-table-icon, p{
+    color: white;
+    font-weight: bold;
+}
+
 .headerSection a {
     text-decoration: none;
 }
 
 a {
     color: green;
-    padding: 10px;
     font-weight: 800;
     cursor: pointer;
 }
