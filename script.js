@@ -49,3 +49,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+// AUDIO SECTION
+var player = document.getElementById("player");
+player.volume = 0.01;
