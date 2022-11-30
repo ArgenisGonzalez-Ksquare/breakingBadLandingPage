@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'breakingBad';
+  src:
+    url('fonts/breakingBad.ttf?2k0dsi') format('truetype'),
+    url('fonts/breakingBad.woff?2k0dsi') format('woff'),
+    url('fonts/breakingBad.svg?2k0dsi#breakingBad') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'breakingBad' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-letter-c:before {
+  content: "\e900";
+}
+.icon-letter-e:before {
+  content: "\e901";
+}
+.icon-letter-h:before {
+  content: "\e902";
+}
+.icon-letter-m:before {
+  content: "\e903";
+}

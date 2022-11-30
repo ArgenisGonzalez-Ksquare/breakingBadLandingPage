@@ -8,93 +8,75 @@
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" type="png" href="img/logo.png">
     <script src="https://kit.fontawesome.com/83bdeaebc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="libs/breakingBad-v1.0/style.css">
 </head>
 <body>
-    <header>
+    <header id="navbar">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/2560px-Breaking_Bad_logo.svg.png" alt="logo" class='logo'>
         <section class="headerSection">
-            <div class="nav-flex-row">
-                <div class="periodic-table-icon">
-                    <p>H</p>
-                </div>
-                <a href="#">ome</a>
-            </div>
-            <div class="nav-flex-row">
-                <div class="periodic-table-icon">
-                    <p>E</p>
-                </div>
-                <a href="#">vents</a>
-            </div>
-            <div class="nav-flex-row">
-                <div class="periodic-table-icon">
-                    <p>C</p>
-                </div>
-                <a href="#">ontacts</a>
-            </div>
-            <div class="nav-flex-row">
-                <div class="periodic-table-icon">
-                    <p>M</p>
-                </div>
-                <a href="#">eet the team</a>
-            </div>
+            <a href="#Home"><i class="icon-letter-h"></i>ome</a>
+            <a href="#Event"><i class="icon-letter-e"></i>vents</a>
+            <a href="#Contact"><i class="icon-letter-c"></i>ontacts</a>
+            <a href="#Team"><i class="icon-letter-m"></i>eet the team</a>
         </section>  
     </header>
 
     <main>
-        <section class="dateAddress">
-
-            <img src="img/Walter_White's_House.jpg" alt="Walter_White_House" class="HouseImg">
-
+        <section id="Home" class="dateAddress">
             <div class="info">
-                <span class="info1"><strong>Day:</strong> 12:01:2022</span>
-                <span class="info2"><strong>Event location:</strong> Albuquerque</span>
-                <span class="info3"><strong>Starting at: 9a.m.</strong> </span>
+                <span class="info1"><strong>Day:</strong> 12:12:2022</span>
+                <span class="info2"><strong>Location:</strong> Los Angeles Convention Center </span>
+                <span class="info3"><strong>Starting at: 11 a.m.</strong> </span>
             </div>
-
+            <img src="img/tvHouse.png" alt="Walter_White_House" class="HouseImg">
         </section>
 
         <section class="countdown">
+                <img src="img/walterWalking.gif" alt="walterwalking" class="walterGif">
                 <p>Countdown:</p>
                 <p id="countdown"></p>
         </section>
 
-        <section class="schedule">
+        <section id="Event" class="schedule">
+            <h1>Schedule</h1>
             <iframe class="eventGrid_html" src="./Event Grid/index.html" frameborder="0"></iframe>
         </section>
 
-        <section class="surveyForm">
-            <h1>CONTACT</h1>
+        <section id="Contact" class="surveyForm">
+            <h1>Contact</h1>
             <div class="typeformContainer">
                 <div class="typeform" data-tf-widget="PMdjxjWI" data-tf-opacity="0" data-tf-hide-headers></div><script src="//embed.typeform.com/next/embed.js"></script>
                 <!--<div class="typeform" data-tf-widget="PMdjxjWI" data-tf-opacity="100" data-tf-hide-headers></div><script src="//embed.typeform.com/next/embed.js"></script>-->
             </div>
-                    </section>
+        </section>
 
-        <section class="meetTeam">
+        <section id="Team" class="meetTeam">
             <img src="img/walter.png" alt="walter" class="walterImg">
-
-            <div class="teamMember">
-                <img src="img/argenis.png" alt="CeoPhoto" class="memberPhoto">
-                <span class="name">Walter Blanco</span>
-                <span class="charge">Event Manager</span>
-            </div>
-
-            <div class="teamMember">
-                <img src="img/tomas.png" alt="CeoPhoto" class="memberPhoto">
-                <span class="name">Saul D Goodman</span>
-                <span class="charge">Contact</span>
-            </div>
-
-            <div class="teamMember">
-                <img src="img/rodrigo.jpg" alt="CeoPhoto" class="memberPhoto">
-                <span class="name">Jose Miguel Rosas</span>
-                <span class="charge">NBC Executive</span>
-            </div>
+            <h1 class="teamText">Meet the team</h1>
+            <div class="memberContainer">
+                <div class="teamMember">
+                    <img src="img/argenis.png" alt="CeoPhoto" class="memberPhoto">
+                    <span class="name">Walter Blanco</span>
+                    <span class="charge">Event Manager</span>
+                </div>
+            
+                <div class="teamMember">
+                    <img src="img/tomas.png" alt="CeoPhoto" class="memberPhoto">
+                    <span class="name">Saul D Goodman</span>
+                    <span class="charge">Contact</span>
+                </div>
+            
+                <div class="teamMember">
+                    <img src="img/rodrigo.jpg" alt="CeoPhoto" class="memberPhoto">
+                    <span class="name">Jose Miguel Rosas</span>
+                    <span class="charge">NBC Executive</span>
+                </div>
+        </div>
         </section>
     </main> 
     
     
     <footer>Todo los derechos reservados</footer>
-    <script src="countdown.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

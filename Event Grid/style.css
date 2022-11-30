@@ -1,5 +1,5 @@
 html, body{
-    background-color: white;
+    background-color: rgb(241, 241, 241);
     font-family: Calibri;
     width: 100%;
     overflow: hidden;
@@ -9,7 +9,7 @@ html, body{
     display: grid; 
     grid-template-columns: 0fr 0fr;
     grid-template-rows: 0fr 0fr;
-    gap: 15px 15px; 
+    gap: 60px 60px; 
     grid-template-areas: 
       ". . ."
       ". . .";
@@ -19,13 +19,14 @@ html, body{
   }
 
 .card{
-        border: 1px solid black;
+        border: 1px solid rgb(60, 60, 60);
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-content: center;
         align-items: flex-start;
-        width: 380px;
+        width: 440px;
+        height: 200px;
         /* max-height: 170px; */
         border-radius: 1em;
         background-color: rgb(60, 60, 60);
@@ -39,8 +40,8 @@ html, body{
     margin-right: left;
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
-    height: 170px;
-    max-width: 170px;
+    height: 200px;
+    max-width: 220px;
 }
 
 .info{

@@ -2,60 +2,68 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-body {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('img/greenBC2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: content-box;
 }
 
-header {
+header{
     width: 100%;
-    height: 20vh;
+    height: 14vh;
     display: flex;
-    outline: red;
     justify-content: space-around;
     align-items: center;
 }
 
-.headerSection{
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-}
-
-.nav-flex-row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.periodic-table-icon{
-    background-color: green;
-    width: 25px;
-    height: 25px;
-    display: flex;
+.headerSection a{
+    text-decoration: none;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+    height: 12vh;
+    transition: all 0.8s;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.periodic-table-icon, p{
+.headerSection a:hover{
+    background-color: rgb(0, 26, 0);
     color: white;
-    font-weight: bold;
 }
 
-.headerSection a {
-    text-decoration: none;
-}
-
-a {
-    color: green;
-    font-weight: 800;
+a{
+    color: white;
+    padding: 10px;
+    font-weight: 600 !important;
     cursor: pointer;
 }
 
-.logo {
-    width: 10%;
+
+.logo{
+    width:9%;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(1, 92, 1);
+    transition: all 1.2s;
+    z-index: 1;
+}
+
+.sticky a {
+    color: white;
 }
 
 main {
@@ -71,65 +79,85 @@ main {
     justify-content: space-evenly;
 }
 
-.HouseImg {
-    width: 40%;
+.HouseImg{
+    width: 41%;
 }
 
-.info {
+.info{
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
     gap: 10px;
-    color: darkgreen;
+    color: white;
 }
 
-.info1 {
-    font-size: 42pt;
+.info1{
+    font-size: 62pt;
 }
-
-.info2 {
+.info2{
     font-size: 32pt;
-    color: black;
+    color: rgb(0, 26, 0);
 }
-
-.info3 {
+.info3{
     font-size: 16pt;
     color: white;
-    background-color: darkgreen;
+    background-color: rgb(0, 26, 0);
     border-radius: 10px;
     padding: 5px;
     width: 220px;
     align-self: center;
 }
 
-.countdown {
+.countdown{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 35px;
+    font-size: 35pt;
     gap: 10px;
     justify-content: center;
-    background-color: darkgreen;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 26, 0);
+    font-weight: bolder;
+}
+
+.walterGif{
+    width: 8%;
 }
 
 /*Member Photos Section*/
 .walterImg {
-    z-index: 1;
+    z-index: 0;
     position: relative;
-    height: 240%;
-    bottom: 62%;
+    height: 180%;
+    bottom: 30%;
 }
 
 .meetTeam {
     display: flex;
     background-color: rgb(1, 76, 1);
     width: 100%;
-    height: 40vh;
+    height: 80vh;
     justify-content: space-evenly;
     align-items: center;
 }
+
+.teamText{
+    padding-top: 5%;
+    font-size: 58pt;
+    color: rgb(0, 26, 0);
+}
+
+.memberContainer {
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    width: 100%;
+}
+
 
 .teamMember {
     padding-top: 20px;
@@ -169,11 +197,20 @@ footer {
 }
 
 .schedule {
-    height: 400px;
+    height: 100vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    justify-content: center;
 }
+
+.schedule h1{
+    padding-top: 5%;
+    font-size: 58pt;
+    color:  rgb(0, 26, 0);
+}
+
 
 .eventGrid_html {
     width: 100%;
@@ -182,7 +219,7 @@ footer {
 
 .surveyForm{
     display: flex;
-    height: 500px;
+    height: 100vh;
     background-color: darkgreen;
     flex-direction: column;
 }
@@ -190,15 +227,18 @@ footer {
 .surveyForm h1{
     text-align: center;
     color: white;
+    padding-top: 5%;
+    font-size: 58pt;
 }
 
 .typeformContainer{
     display: flex;
     justify-content: right;
-    height: 100%;
+    height: 80%;
 }
 
 .typeform{
     height: 100%;
     width: 50%;
 }
+
