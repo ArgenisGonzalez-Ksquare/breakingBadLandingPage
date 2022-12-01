@@ -3,6 +3,11 @@
     scroll-behavior: smooth;
 }
 
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
 body{
     margin: 0;
     padding: 0;
